@@ -1,0 +1,17 @@
+.gradient-custom {
+  background: #f093fb;
+  background: -webkit-linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+  background: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+}
+
+.shadow {
+  box-shadow: 
+    rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+label {
+  display: flex;
+  justify-content: flex-start;
+}
