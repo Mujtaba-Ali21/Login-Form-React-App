@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Main.css";
 
 function Main(props) {
@@ -15,16 +15,19 @@ function Main(props) {
 
   function submitFormFunc() {
     setStudentArray([
+      ...studentArray,
       {
         firstName: firstName,
         lastName: lastName,
         userEmail: userEmail,
         userPassword: userPassword,
-      }
+      },
     ]);
-
-    console.log(studentArray);
   }
+
+  useEffect(() => {
+    console.log(studentArray);
+  }, [studentArray]);
 
   return (
     <>
